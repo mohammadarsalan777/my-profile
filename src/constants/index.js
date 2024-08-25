@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -29,32 +29,36 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "E-Commerce Website (The Bakehouse)",
     image: project1,
+    liveLink: "https://thebakehousebyishika.com/",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Developed and implemented an e-commerce web application with efficient product listing, seamless checkout, order tracking, and customer support features. Demonstrated strong problem-solving and attention to detail, collaborating with cross-functional teams to ensure smooth integration. Delivered a user-friendly interface and reliable services, meeting project goals within the timeline.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Bootstrap"],
   },
   {
-    title: "Task Management App",
+    title: "A College Website",
     image: project2,
+    liveLink: "https://diamondcollegenagpur.com/",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "The website is having static pages showing complete information of the respective college. It also contains contact form & social media integration",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Portfolio Website",
     image: project3,
+    liveLink: "https://mohammad-arsalan-profile.vercel.app/",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Former Motion"],
   },
   {
-    title: "Blogging Platform",
+    title: "Gym Website",
     image: project4,
+    liveLink: "https://fitness-choise-gym.vercel.app/",
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Developed a React-based website to explore and implement custom CSS techniques for responsive design, ensuring optimal performance and user experience across various devices and screen sizes.",
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
 

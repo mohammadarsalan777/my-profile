@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 
 
+
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>
@@ -18,11 +19,26 @@ const App = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
-        <About />
-        <Technologies />
-        <Experience />
-        <Projects />
-        <Contact />
+        <section id='about'>
+          <About />
+        </section>
+
+        <section id='skills'>
+          <Technologies />
+        </section>
+
+        <section id='experience'>
+          <Experience />
+        </section>
+
+        <section id='project'>
+          <Projects />
+        </section>
+
+        <section id='contact'>
+          <Contact />
+        </section>
+
       </div>
     </div>
   )
