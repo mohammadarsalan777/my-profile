@@ -1,6 +1,6 @@
 import React from "react";
 // import HERO_CONTENT from '../constants/index.js'
-import profilePic from "../assets/gif.gif";
+import profilePic from "../assets/gif.webp";
 // import profilePic from "../../public/about.jpg";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
