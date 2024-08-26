@@ -29,7 +29,7 @@ const Hero = () => {
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className=" w-full lg:pb-16 text-3xl text-center font-thin  tracking-tight lg:mt-16 lg:text-6xl"
+                            className=" w-full lg:pb-16 text-3xl lg:text-start text-center font-thin  tracking-tight lg:mt-16 lg:text-6xl"
                         >
                             Mohammad Arsalan
                         </motion.h1>
@@ -62,7 +62,7 @@ const Hero = () => {
                             <a href="https://github.com/mohammadarsalan777/">
                                 <FaGithub className="cursor-pointer" />
                             </a>
-                            <a href="/public/Mohammad_Arsalan_Resume.pdf">
+                            <a href="https://drive.google.com/file/d/1MV3VrLNcXwe2jn0SIq0ERBxfkEHMsHe6/view?usp=drive_link">
 
                                 <span className="bg-neutral-900 text-sm hover:text-white box-border px-4 py-3 rounded-md text-neutral-400 w-28 text-center mx-1 cursor-pointer flex items-center justify-between">
                                     <BiDownload className="text-pink-800" /> <span>Resume</span>
