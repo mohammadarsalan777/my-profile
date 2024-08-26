@@ -1,6 +1,9 @@
 import React from "react";
 import { PROJECTS } from "../constants/index";
 import { motion } from 'framer-motion'
+import { FaLink } from "react-icons/fa";
+import { TbSourceCode } from "react-icons/tb";
+import { LuExternalLink } from "react-icons/lu";
 
 const Projects = () => {
     return (
@@ -31,20 +34,39 @@ const Projects = () => {
                             transition={{ duration: 1 }}
                             className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold">{project.title}</h6>
-                            <p className="mb-4 text-neutral-400">{project.description}</p>
-                            {project.technologies.map((tech, index) => (
-                                <span
-                                    key={index}
-                                    className="text-purple-800 mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
-                                >
-                                    {tech}
+                            <p className="mb-4 text-neutral-400">{project.description}
+                                <br />
+                                <span className="flex gap-2 mb-0 ">
+
+                                    <a href={project.liveLink} className="">
+                                        <span className="my-4 flex items-center  hover:text-white hover:underline" >
+                                            <span className="mr-2 text-medium ">Live</span><LuExternalLink className="text-pink-800 " />
+                                        </span>
+                                    </a>
+                                    <a href={project.sourceLink} className="">
+                                        <span className="my-4 flex items-center  hover:text-white hover:underline" >
+                                            <span className="ml-2 text-medium ">Source Code</span><TbSourceCode className="text-pink-800" />
+                                        </span>
+                                    </a>
                                 </span>
-                            ))}
+                            </p>
+
+                            <div>
+                                {project.technologies.map((tech, index) => (
+                                    <span
+                                        key={index}
+                                        className="text-purple-800 mr-2 lg:mt-0 rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+
+                            </div>
                         </motion.div>
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 

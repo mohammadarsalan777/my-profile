@@ -42,19 +42,19 @@ const Navbar = () => {
                             className='flex flex-col items-center space-y-6'
                         >
                             <a href="#about" onClick={handleClose}>
-                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:bg-neutral-700 hover:w-[100%]'>About</li>
+                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:border-b hover:border-t hover:bg-neutral-800 hover:w-[100%]'>About</li>
                             </a>
                             <a href="#skills" onClick={handleClose}>
-                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:bg-neutral-700 hover:w-[100%] '>Skills</li>
+                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:border-b hover:border-t hover:bg-neutral-800 hover:w-[100%] '>Skills</li>
                             </a>
                             <a href="#experience" onClick={handleClose}>
-                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:bg-neutral-700'>Experience</li>
+                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:border-b hover:border-t hover:bg-neutral-800'>Experience</li>
                             </a>
                             <a href="#project" onClick={handleClose}>
-                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:bg-neutral-700 hover:w-[100%]'>Project</li>
+                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:border-b hover:border-t hover:bg-neutral-800 hover:w-[100%]'>Project</li>
                             </a>
                             <a href="#contact" onClick={handleClose}>
-                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:bg-neutral-700 hover:w-[100%]'>Contact</li>
+                                <li className='bg-neutral-900 text-white px-5 py-3 rounded-md w-full text-center cursor-pointer hover:border-b hover:border-t hover:bg-neutral-800 hover:w-[100%]'>Contact</li>
                             </a>
                         </motion.ul>
                     </div>

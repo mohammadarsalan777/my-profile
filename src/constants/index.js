@@ -11,7 +11,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "2022 - Present",
-    role: "Senior Full Stack Developer",
+    role: " Full Stack Developer",
     company: "Nass Technologies",
     description: `Developing and maintaining web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborating with cross-functional teams to deliver high-quality software products on schedule.`,
 
@@ -33,6 +33,7 @@ export const PROJECTS = [
     title: "E-Commerce Website (The Bakehouse)",
     image: project1,
     liveLink: "https://thebakehousebyishika.com/",
+    sourceLink: "",
     description:
       "Developed and implemented an e-commerce web application with efficient product listing, seamless checkout, order tracking, and customer support features. Demonstrated strong problem-solving and attention to detail, collaborating with cross-functional teams to ensure smooth integration. Delivered a user-friendly interface and reliable services, meeting project goals within the timeline.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Bootstrap"],
@@ -41,6 +42,7 @@ export const PROJECTS = [
     title: "A College Website",
     image: project2,
     liveLink: "https://diamondcollegenagpur.com/",
+    sourceLink: "",
     description:
       "The website is having static pages showing complete information of the respective college. It also contains contact form & social media integration",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -49,6 +51,7 @@ export const PROJECTS = [
     title: "Portfolio Website",
     image: project3,
     liveLink: "https://mohammad-arsalan-profile.vercel.app/",
+    sourceLink: "https://github.com/mohammadarsalan777/my-profile",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Former Motion"],
@@ -57,6 +60,7 @@ export const PROJECTS = [
     title: "Gym Website",
     image: project4,
     liveLink: "https://fitness-choise-gym.vercel.app/",
+    sourceLink: "https://github.com/mohammadarsalan777/gym-website",
     description:
       "Developed a React-based website to explore and implement custom CSS techniques for responsive design, ensuring optimal performance and user experience across various devices and screen sizes.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -64,7 +68,8 @@ export const PROJECTS = [
   {
     title: "Dashboard UI",
     image: project5,
-    liveLink: "https://fitness-choise-gym.vercel.app/",
+    liveLink: "https://dashboard-ui-three-ivory.vercel.app/",
+    sourceLink: "https://github.com/mohammadarsalan777/Dashboard-UI",
     description:
       "Developed a React-based website to explore and implement custom CSS techniques for responsive design, ensuring optimal performance and user experience across various devices and screen sizes.",
     technologies: ["HTML", "CSS", "JavaScript"],

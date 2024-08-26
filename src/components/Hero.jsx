@@ -4,9 +4,11 @@ import profilePic from "../assets/gif.webp";
 // import profilePic from "../../public/about.jpg";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BiCartDownload, BiDownload } from "react-icons/bi";
+import { BiDownload } from "react-icons/bi";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+
+
+const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -46,6 +48,7 @@ const Hero = () => {
                             className="my-2 max-w-xl py-6 lg:font-light text-neutral-400  text-justify"
                         >
                             {HERO_CONTENT}
+
                         </motion.p>
                         <motion.div
                             variants={container(1.5)}
@@ -59,10 +62,12 @@ const Hero = () => {
                             <a href="https://github.com/mohammadarsalan777/">
                                 <FaGithub className="cursor-pointer" />
                             </a>
-                            <a href=""></a>
-                            <span className="bg-neutral-900 text-sm hover:text-white box-border px-4 py-3 rounded-md text-neutral-400 w-28 text-center mx-1 cursor-pointer flex items-center justify-between">
-                                <BiDownload className="text-white" /> <span>Resume</span>
-                            </span>
+                            <a href="/src/assets/Mohammad_Arsalan_Resume.pdf">
+
+                                <span className="bg-neutral-900 text-sm hover:text-white box-border px-4 py-3 rounded-md text-neutral-400 w-28 text-center mx-1 cursor-pointer flex items-center justify-between">
+                                    <BiDownload className="text-pink-800" /> <span>Resume</span>
+                                </span>
+                            </a>
                         </motion.div>
                     </div>
                 </div>
