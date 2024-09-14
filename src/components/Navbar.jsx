@@ -39,8 +39,8 @@ const Navbar = ({ handleThemeToggler }) => {
                     {
                         themeChange
 
-                            ? <MdDarkMode onClick={handleClick} className='bg-gray-800 md:hidden h-[1.82rem] w-[1.82rem] p-1 rounded text-gray-400' />
-                            : <FaLightbulb onClick={handleClick} className='bg-gray-800 md:hidden h-[1.82rem] w-[1.82rem] p-1 rounded text-white' />
+                            ? <MdDarkMode onClick={handleClick} className='bg-gray-800 cursor-pointer md:hidden h-[1.82rem] w-[1.82rem] p-1 rounded text-gray-400' />
+                            : <FaLightbulb onClick={handleClick} className='bg-gray-800 cursor-pointer md:hidden h-[1.82rem] w-[1.82rem] p-1 rounded text-white' />
                     }
 
 
@@ -110,8 +110,8 @@ const Navbar = ({ handleThemeToggler }) => {
                         {
                             themeChange
 
-                                ? <MdDarkMode onClick={handleClick} className='bg-gray-800  h-[2.65rem] btn-underline w-11 p-2 rounded text-gray-400' />
-                                : <FaLightbulb onClick={handleClick} className='bg-black  h-[2.65rem] btn-underline w-11 p-2 rounded text-white' />
+                                ? <MdDarkMode onClick={handleClick} className='bg-gray-800  h-[2.65rem] btn-underline w-11 p-2 rounded cursor-pointer text-gray-400' />
+                                : <FaLightbulb onClick={handleClick} className='bg-black  h-[2.65rem] btn-underline w-11 p-2 rounded cursor-pointer text-white' />
                         }
                     </div>
                 </motion.ul>
