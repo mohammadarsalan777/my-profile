@@ -33,26 +33,26 @@ const iconVariants = (duration) => ({
     },
 });
 
-const TechnologyCard = ({ IconComponent, color, name, duration }) => (
+const TechnologyCard = ({ IconComponent, color, name, duration, themeToggle }) => (
     <motion.div
         variants={iconVariants(duration)}
         initial="initial"
         animate="animate"
-        className="flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4"
+        className={`${themeToggle ? 'flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4 bg-black' : 'flex flex-col items-center justify-center rounded-2xl border-4 border-neutral-800 p-4'}`}
         aria-label={name}
     >
         <IconComponent className={`text-7xl ${color}`} />
-        <p className="mt-2 text-center text-neutral-400">{name}</p>
+        <p className={`${themeToggle ? 'text-white' : 'mt-2 text-center text-neutral-400'}`}>{name}</p>
     </motion.div>
 );
 
-const Technologies = () => (
+const Technologies = ({ themeToggle }) => (
     <div className="border-b border-neutral-900 pb-24">
         <motion.h2
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 1.5 }}
-            className="my-20 text-center text-4xl"
+            className={`${themeToggle ? 'text-black my-20 text-center text-4xl' : 'my-20 text-center text-4xl'}`}
         >
             Technologies & Skills
         </motion.h2>
@@ -63,7 +63,7 @@ const Technologies = () => (
             className="flex flex-wrap items-center justify-center gap-4"
         >
             {iconData.map(({ id, IconComponent, color, name, duration }) => (
-                <TechnologyCard key={id} IconComponent={IconComponent} color={color} name={name} duration={duration} />
+                <TechnologyCard key={id} IconComponent={IconComponent} color={color} name={name} duration={duration} themeToggle={themeToggle} />
             ))}
         </motion.div>
     </div>

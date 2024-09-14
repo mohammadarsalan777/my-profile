@@ -8,10 +8,10 @@ const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a p
 const education = `Bachlor's of Engineering from Computer Science. `
 
 
-const About = () => {
+const About = ({ themeToggle }) => {
     return (
         <div className="border-b border-neutral-900 pb-4">
-            <h1 className="my-20 text-center text-4xl">
+            <h1 className={`${themeToggle ? 'text-black my-20 text-center text-4xl' : 'my-20 text-center text-4xl'}`}>
                 About <span className="text-neutral-500">Me</span>
             </h1>
             <div className="flex flex-wrap">
@@ -30,7 +30,7 @@ const About = () => {
                     transition={{ duration: 1 }}
                     className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start">
-                        <p className="my-2 max-w-2xl py-2 text-justify text-neutral-400 lg:font-thin">
+                        <p className={`${themeToggle ? 'text-black my-2 text-justify' : 'my-2  max-w-xl py-6 lg:font-light text-neutral-400  text-justify'}`}>
                             {ABOUT_TEXT}
                             <br /><br />
                             <b className="font-semibold">Education: </b>

@@ -19,9 +19,9 @@ const container = (delay) => ({
     },
 });
 
-const Hero = () => {
+const Hero = ({ themeToggle }) => {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+        <div className={`${themeToggle ? "text-black " : "border-b border-neutral-900 pb-4 lg:mb-35"}`}>
             <div className="flex flex-wrap items-center">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
@@ -45,7 +45,7 @@ const Hero = () => {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl py-6 lg:font-light text-neutral-400  text-justify"
+                            className={`${themeToggle ? 'text-black my-2 text-justify' : 'my-2 max-w-xl py-6 lg:font-light text-neutral-400  text-justify'}`}
                         >
                             {HERO_CONTENT}
 

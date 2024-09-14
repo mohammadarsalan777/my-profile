@@ -7,4 +7,51 @@
 html {
     scroll-behavior: smooth;
   }
-  
+
+  .background__color{
+    color: black;
+    background: linear-gradient(135deg, black, #f0f0f0 25%, #ffffff 25%, #f8f8f8 50%, #e0e0e0 50%, #ffffff 75%, #f0f0f0 75%, black);
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 200% 200%;
+
+  }
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-underline-hover {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-underline-hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.btn-underline-hover:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: #ffffff;
+}
+
+.btn-underline-hover:hover::before {
+  width: 100%;
+  left: 0;
+}
